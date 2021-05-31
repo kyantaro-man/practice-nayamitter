@@ -1,7 +1,7 @@
 class TroublesController < ApplicationController
 
     def index
-        @troubles = Trouble.all
+        @troubles = Trouble.all.order("id DESC")
     end
     
 end
