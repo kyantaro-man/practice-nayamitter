@@ -4,6 +4,7 @@
 
 body {
     background-color: #dfdcef;
+    height: 100vh;
 }
 
 .header {
@@ -81,14 +82,32 @@ body {
     padding: 4px 12px;
     font-size: 16px;
 }
-
 .troubles {
+    max-height: 400px;
+    overflow: scroll;
+}
+.trouble {
     padding: 6px;
     border-bottom: 1px solid #333;
+}
+.trouble_top {
     display: flex;
 }
-.troubles div {
+.trouble_top div {
     min-width: 48px;
+}
+.trouble_bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+.delete-btn {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: red;
+    color: #ffe200;
+    padding: 2px 12px;
+    font-size: 12px;
 }
 
 .contents {
