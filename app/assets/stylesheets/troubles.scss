@@ -71,7 +71,7 @@ body {
     border: 1px solid #333;
     margin-bottom: 6px;
 }
-.form button {
+.form input[type="submit"] {
     align-self: flex-end;
     appearance: none;
     border: 0;
@@ -85,6 +85,10 @@ body {
 .troubles {
     padding: 6px;
     border-bottom: 1px solid #333;
+    display: flex;
+}
+.troubles div {
+    min-width: 48px;
 }
 
 .contents {

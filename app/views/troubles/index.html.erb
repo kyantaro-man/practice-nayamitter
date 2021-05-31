@@ -34,15 +34,19 @@
                         ホームまたはお気に入りの悩み
                     </div>
         
-                    <form action="" class="form">
-                        <textarea name="" id="" cols="10" rows="4"></textarea>
-                        <button type="submit">悩む</button>
-                    </form>
+                    <%= form_with(model: @trouble, local: true, class: "form") do |form| %>
+                        <%= form.text_area :text, size: "10x4" %>
+                        <%= form.submit "悩む" %>
+                    <% end %>
     
                     <% @troubles.each do |trouble| %>
                     <div class="troubles">
-                        悩み：
-                        <%= trouble.text %>
+                        <div>
+                            悩み：
+                        </div>
+                        <div>
+                            <%= trouble.text %>
+                        </div>
                     </div>
                     <% end %>
                 </div>
