@@ -1,0 +1,93 @@
+// Place all the styles related to the troubles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    background-color: #dfdcef;
+}
+
+.header {
+    height: 180px;
+}
+.header-inner {
+    position: relative;
+}
+.header-title {
+    font-size: 42px;
+    color: #ffe200;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-box.left {
+    width: calc(20% - 40px);
+    min-width: 144px;
+}
+.main-box.center {
+    width: 50%;
+}
+.main-box.right {
+    width: calc(30% - 40px);
+}
+
+.sidebar {
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 4px;
+}
+.sidebar li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.center-box {
+    background-color: #fff;
+    border: 1px solid #333;
+}
+.page-title {
+    padding: 6px;
+    border-bottom: 2px solid #333;
+}
+.form {
+    padding: 2px;
+    border-bottom: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+.form textarea {
+    border: 1px solid #333;
+    margin-bottom: 6px;
+}
+.form button {
+    align-self: flex-end;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #5d29c1;
+    color: #ffe200;
+    padding: 4px 12px;
+    font-size: 16px;
+}
+
+.troubles {
+    padding: 6px;
+    border-bottom: 1px solid #333;
+}
+
+.contents {
+    background-color: #fff;
+    border: 1px solid #333;
+}

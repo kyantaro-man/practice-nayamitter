@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム画面 | 悩みった〜</title>
+    <link rel="stylesheets" href="destyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-title">
+                悩みった〜
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" class="header-bg">
+                <path d="M0,0 v8 q5,5 20,0 t20,0 t20,0 t20,0 t20,0 v-8 Z" fill="#5d29c1"></path>
+            </svg>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="main-box left">
+                <ul class="sidebar">
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">お気に入りの悩み</a></li>
+                </ul>
+            </div>
+    
+            <div class="main-box center">
+                <div class="center-box">
+                    <div class="page-title">
+                        ホームまたはお気に入りの悩み
+                    </div>
+        
+                    <form action="" class="form">
+                        <textarea name="" id="" cols="10" rows="4"></textarea>
+                        <button type="submit">悩む</button>
+                    </form>
+    
+                    <% @troubles.each do |trouble| %>
+                    <div class="troubles">
+                        悩み：
+                        <%= trouble.text %>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+
+            <div class="main-box right">
+                <div class="contents">
+                    ストレスが溜まったら好きなだけ愚痴を吐きましょう！<br><br>
+
+                    そして、ストレス発散できたら発散したままではなく<br>
+                    次どうするべきかを考えよう！<br><br>
+
+                    自分の悪かったことはなんだったのか反省しましょう！<br><br>
+
+                    もしわからなければ誰かに相談しましょう！<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-copyright"></div>
+    </footer>
+</body>
+</html>
